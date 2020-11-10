@@ -1,6 +1,6 @@
 {
-  "name": "react-sortablejs",
-  "version": "6.0.0",
+  "name": "ereact-sortablejs",
+  "version": "6.0.1",
   "author": {
     "name": "Wayne Van Son",
     "email": "waynevanson@gmail.com"
@@ -14,7 +14,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "commit": "cz",
-    "prepublishOnly": "yarn build",
+    
     "build": "yarn build:parcel",
     "build:parcel": "parcel build ./src/index.ts",
     "serve": "npm-run-all --parallel serve:*",
