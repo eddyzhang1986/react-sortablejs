@@ -73,8 +73,8 @@ Please read the updated README.md at https://github.com/SortableJS/react-sortabl
   }
 
   render(): JSX.Element {
-    const { tag, style, className, id } = this.props;
-    const classicProps = { style, className, id };
+    const { tag, style, className, id ,sort,list,group,setList,clone,...otherProps} = this.props;
+    const classicProps = { style, className, id,...otherProps };
 
     // if no tag, default to a `div` element.
     const newTag = !tag || tag === null ? "div" : tag;
